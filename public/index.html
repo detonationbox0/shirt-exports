@@ -15,22 +15,33 @@
 
 </head>
 <body>
-    <div id="left">
-		<div id="shirt-container">
-			<img src="assets/shirt.png" />
-			<div id="canvas"></div>
-		</div>
-	</div>
+    <div id="resize">
+        <div id="relative">
+          <div class="canvas" id="front-canvas"></div>
+          <div class="canvas" id="back-canvas"></div>
+          <img id="front-img" src="https://portal.themailshark.net/franchisepromoF/Apparels/Apparel_front_12_370_319.png" >
+          <img id="back-img" src="https://portal.themailshark.net/franchisepromoF/Apparels/Apparel_back_12_370_319.png" >
+        </div>
+      </div>
+      <div id="controls">
+        <button id="thumb">Export Thumbnail</button> 
+        <button id="print">Export Print</button>
+        <button id="switch">Back</button> 
 
-    <div id="right">
-		<p>Right side</p>
-	</div>
+      </div>
+
     
     <!-- jQuery https://jquery.com/ -->
     <script src="./assets/jquery-3.6.3.min.js"></script>
 
 	<!-- Konva -->
 	<script src="https://unpkg.com/konva@8/konva.min.js"></script>
+
+	<!-- jsPDF -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
+    <!-- html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="app.js"></script>
 
